@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:4200",
+    origin: "https://hushazvillany-new.vercel.app/",
     credentials: true,
 }));
 app.use(express.static("public"))
