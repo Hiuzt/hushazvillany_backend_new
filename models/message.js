@@ -24,7 +24,12 @@ const MessageSchema = mongoose.Schema({
     reply_message: {
         type: String,
         default: "",
-    }
+    },
+
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
 });
 
 module.exports = mongoose.model("Messages", MessageSchema)

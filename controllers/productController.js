@@ -9,7 +9,6 @@ exports.getAllProducts = CatchAsyncHandler(async(req, res, next) => {
         productSource.image = `${fullUrl}images/products/${productSource.image}`
     })
     
-    console.log(products)
   
     res.status(200).json({
         success: true,

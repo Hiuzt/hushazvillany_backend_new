@@ -60,7 +60,6 @@ exports.deleteUser = CatchAsyncHandler(async(req, res, next) => {
 })
 
 exports.updateUser = CatchAsyncHandler(async(req, res, next) => {
-    console.log(req.body)
     let user = await User.findById(req.params.id);
 
     if (req.body.password === "") {
