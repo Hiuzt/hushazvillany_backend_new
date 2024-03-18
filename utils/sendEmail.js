@@ -15,7 +15,7 @@ exports.sendEmail = async options => {
     console.log(options.email)
 
     const mailOptions = {
-        from: 'kernerzoltan12@gmail.com',
+        from: 'kerner.daniel1@gmail.com',
         to: options.email,
         subject: options.subject,
         html: options.message
